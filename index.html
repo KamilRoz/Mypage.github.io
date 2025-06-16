@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Kamil's Home Page!</title>
+    <style>
+      html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: cursive;
+  background-color: rgb(52, 122, 235);
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+h2 {
+  text-decoration: underline rgb(247, 59, 17);
+}
+#bannerimage {
+  display: flex;
+  flex-direction: column;
+}
+.c-site-header {
+  font-size: 80px;
+  text-decoration: underline rgb(247, 59, 17);
+}
+.top-section {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+#about {
+  border: 4px solid rgb(247, 59, 17);
+  margin: 5px;
+  padding: 5px;
+  flex: 2;
+}
+#navigation {
+  border: 4px solid rgb(247, 59, 17);
+  margin: 5px;
+  padding: 5px;
+  flex: 1;
+}
+.navlist {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.middle-section {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+#fave-things {
+  border: 4px solid rgb(247, 59, 17);
+  margin: 5px;
+  padding: 5px;
+  flex: 1;
+}
+#foods {
+  border: 4px solid rgb(247, 59, 17);
+  margin: 5px;
+  padding: 5px;
+  flex: 1;
+}
+.list-enjoy {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.end-section {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+#fave-films {
+  border: 4px solid rgb(247, 59, 17);
+  margin: 5px;
+  padding: 5px;
+  flex: 1;
+}
+#thankyou {
+  border: 4px solid rgb(247, 59, 17);
+  margin: 5px;
+  padding: 5px;
+  flex: 2;
+}
+.hide {
+  display: none;
+}
+.food:hover + .hide{
+  display: block;
+  color: yellow
+}
+    </style>
+  </head>
+  <body>
+    <!-- Banner Code -->
+    <header>
+      <div id="bannerimage">
+        <img src="https://art.pixilart.com/7ec4fea05ac9e5c.png" alt="Banner saying welcome to my page" height="350">
+      </div>
+    </header>
+    <!-- Main about and navigation code -->
+    <h1 class="c-site-header">Welcome to my page, hope you like it!</h1>
+   <div class="top-section">
+    <div id="about">
+      <h2 class="heading-info"> A little about me:</h2>
+      <p class=info> I'm 28 years old and was born in Poland. My family and I moved to England when I was seven, and since then, it has been my home. I now see myself as more British than Polish, as I’ve spent most of my life here.
+
+Recently, I’ve started teaching myself how to code (with the help of CodeYourFuture), and I hope to progress enough to eventually land a job in the tech industry.
+
+Thanks for browsing my page—I’d love to hear any advice you might have!
+      </p>
+    </div>
+    <!-- Navigation code -->
+    <div id="navigation">
+      <nav aria-label="Main Site Links" class="nav">
+        <p> Jump to: </p>
+        <ul class="navlist">
+          <li><a href="#fave-things">Things I enjoy</a></li>
+          <li><a href="#foods">Favourite Foods</a></li>
+          <li><a href="#fave-films">Favourite Films</a></li>
+        </ul>
+      </nav>
+    </div>
+   </div>
+    <!-- Favourite Things Code -->
+   <div class="middle-section">
+    <div id=fave-things>
+      <h2 class=heading-enjoy>Some things I enjoy:</h2>
+        <ul class="list-enjoy">
+          <li>Basketball (Favourite team <a href="https://en.wikipedia.org/wiki/Chicago_Bulls">Chicago Bulls</a>)</li>
+          <li>Gaming (Favourite game <a href="https://en.wikipedia.org/wiki/Call_of_Duty:_Black_Ops_6">Black Ops 6</a>)</li>
+          <li>Dogs (Favourite breed <a href="https://en.wikipedia.org/wiki/Welsh_Corgi">Corgi</a>)</li>
+          <li>Nature (Favourite place <a href="https://www.st-nectansglen.co.uk/">St Nectan's Glen</a>)</li>
+        </ul>
+      <img class="st-nectans" src="https://www.st-nectansglen.co.uk/wp-content/uploads/2020/08/waterfall-one.jpg" width="300" alt="St Nectans Glen">
+    </div>
+    <!-- Favourite Foods Code -->
+    <div id="foods">
+      <h2 class="foodheading">Favourite foods:</h2>
+      <p class="food-info">I love almost all kinds of food but some of my favourites are:</p>
+        <p class="food">Pierogi</p><p class="hide">Pierogi are traditional Polish dumplings made of dough and filled with various ingredients like potatoes, cheese, meat, or fruit, then boiled or fried. They're a popular comfort food in Central and Eastern Europe.<br><img class="pierogi-pic" src="https://polishfeast.com/wp-content/uploads/2024/03/Polish-Pierogi-Ruskie-225x225.jpg" alt="Polish Pierogi" width="200"></p>
+        <p class="food">Burrito</p><p class="hide">A burrito is a Mexican dish consisting of a flour tortilla wrapped around a filling, typically including ingredients like beans, rice, meat, cheese, and salsa. It's a popular handheld meal, often served hot.<br><img class="burrito-pic" src="https://www.allrecipes.com/thmb/w2WekH0XGb0pxsj0qAXwvFdSwR0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/14041-delicious-black-bean-burritos-ddmfs-3x2-008-7fbf871b145f4f35a45650ee903fce73.jpg" alt="Burrito" width="200"></p>
+        <p class="food">Cottage Pie</p><p class="hide">Cottage Pie is a British dish made with minced meat (usually beef) cooked in gravy, topped with mashed potatoes, and baked until golden. It's a hearty comfort food, similar to Shepherd’s Pie but uses beef instead of lamb.<br><img class="pie-pic" src="https://eightforestlane.com/wp-content/uploads/2020/06/Cottage-Pie_SQ-1-1.jpg" alt="Cottage Pie" width="200"></p>
+        <p class="food">Sushi</p><p class="hide">Sushi is a Japanese dish featuring vinegared rice combined with ingredients like raw fish, seafood, vegetables, or eggs. It’s often served with soy sauce, wasabi, and pickled ginger, and comes in various forms like nigiri, maki, and sashimi.<br><img class="sushi-pic" src="https://seafoodbysykes.com/wp-content/uploads/Smoked-salmon-vegetable-sushi-500x500.jpg" alt="Sushi" width="200"></p>      
+    </div>
+   </div>
+   <div class="end-section">
+    <!-- Favourite Films Code -->
+    <div id="fave-films">
+      <h2>Favourite Films:</h2>
+        <ol class="films">
+          <li>Lord of the Rings</li>
+          <li>The Shining</li>
+          <li>Batman: The Dark Night</li>
+          <li>The Shawshank Redeption</li>
+        </ol>
+      <iframe class="lotr-vid" width="900" height="400" src="https://www.youtube.com/embed/3hd1SiY7-FE?si=lxqrBRUzIlYQY3op" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <!-- Footer Code -->
+    <div id="thankyou">
+    <footer class="c-site-footer">
+      <h2 class="end-heading">Thank you for Visting!</h2>
+        <p>Hope you have enjoyed browing my page and please let me know if there's anything I can do better! Some of the skills I have used to make it are HTML, CSS and AI.</p>
+      <div class="comment-box">
+        <form action="place-holder.html" method="POST">
+          <p class="comment">Please add and submit your comments!</p>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name"><br><br>
+          
+          <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+          
+          <label for="message">Message:</label>
+  <textarea id="message" name="message"></textarea><br><br>
+          
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </footer>
+    </div>
+   </div>
+  </body>
+</html>
